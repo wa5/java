@@ -1,0 +1,7 @@
+class iiht {
+    int data = 99; //instance variable  
+    static int a = 1; //static variable  
+    void method() {
+        int b = 90; //local variable  
+    }
+}
