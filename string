@@ -1,0 +1,23 @@
+There are two ways to create String object:
+
+By string literal
+By new keyword
+Java String literal is created by using double quotes. For Example:
+
+String s="welcome";
+
+String s=new String("Welcome");//creates two objects and one reference variable  
+In such case, JVM will create a new string object in normal (non-pool) heap memory, and the literal "Welcome" will be placed in the string constant pool. The variable s will refer to the object in a heap (non-pool).
+
+
+
+public class StringExample{  
+public static void main(String args[]){  
+String s1="java";//creating string by java string literal  
+char ch[]={'s','t','r','i','n','g','s'};  
+String s2=new String(ch);//converting char array to string  
+String s3=new String("example");//creating java string by new keyword  
+System.out.println(s1);  
+System.out.println(s2);  
+System.out.println(s3);  
+}}
