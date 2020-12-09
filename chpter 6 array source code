@@ -1,3 +1,48 @@
+
+package com.company;
+
+public class cwh_26_arrays {
+    public static void main(String[] args) {
+        /* Classroom of 500 students - You have to store marks of these 500 students
+        You have 2 options:
+        1. Create 500 variables
+        2. Use Arrays (recommended)
+        */
+        // There are three main ways to create an array in Java
+        // 1. Declaration and memory allocation
+        // int [] marks = new int[5];
+
+        // 2. Declaration and then memory allocation
+        // int [] marks;
+        // marks = new int[5];
+        // Initialization
+        // marks[0] = 100;
+        // marks[1] = 60;
+        // marks[2] = 70;
+        // marks[3] = 90;
+        // marks[4] = 86;
+
+        // 3. Declaration, memory allocation and initialization together
+        int [] marks = {98, 45, 79, 99, 80};
+
+        // marks[5] = 96; - throws an error
+        System.out.println(marks[4]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package com.company;
 
 public class cwh_28_multi_dim_arrays {
@@ -23,4 +68,23 @@ public class cwh_28_multi_dim_arrays {
         }
 
     }
+}
+int[] marks; //Declaration!
+marks = new int[5];           //Memory allocation!
+
+int[] marks = new int[5]; //Declaration + Memory allocation!
+int[] marks = {100,70,80,71,98} // Declare + Initialize!
+Array indices start from 0 and go till (n-1) where n is the size of the array.
+
+
+Array length
+
+Arrays have a length property which gives the length of the array.
+
+marks.length
+
+
+for (int i=0; i<marks.length; i++)
+{
+            Sout(marks[i]);    //Array Traversal
 }
